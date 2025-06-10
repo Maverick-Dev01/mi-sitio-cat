@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catálogo de Joyería</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow sticky top-0 z-10">
+      <div
+        class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+          <img
+            src="img/logo.png"
+            alt="Logo"
+            class="w-10 h-10 object-contain rounded-full shadow-sm"
+          />
+          <h1 class="text-2xl font-bold text-pink-600">Joyería Elegante</h1>
+        </div>
+        <nav class="space-x-4">
+          <a href="#catalogo" class="text-gray-700 hover:text-pink-600"
+            >Catálogo</a
+          >
+          <a href="#contacto" class="text-gray-700 hover:text-pink-600"
+            >Contacto</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="text-center py-16 bg-pink-100">
+      <h2 class="text-4xl font-bold mb-4">Descubre tu brillo interior</h2>
+      <p class="text-lg mb-6">
+        Joyería hecha a mano para mujeres con estilo propio.
+      </p>
+      <a
+        href="#catalogo"
+        class="bg-pink-600 text-white px-6 py-3 rounded hover:bg-pink-700 transition"
+      >
+        Ver Catálogo
+      </a>
+    </section>
+    <div class="mb-10 text-center">
+      <input
+        type="text"
+        id="buscador"
+        placeholder="Buscar producto..."
+        class="w-full max-w-md px-4 py-2 border border-gray-300 rounded shadow-sm focus:ring focus:ring-pink-200 outline-none"
+      />
+    </div>
+
+    <!-- Catálogo -->
+    <section id="catalogo" class="max-w-6xl mx-auto px-4 py-16">
+      <h3 class="text-3xl font-bold text-center mb-12">Nuestro Catálogo</h3>
+      <div
+        id="gridProductos"
+        class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+      >
+        <!-- Se insertan productos con JS -->
+      </div>
+    </section>
+
+    <!-- Sobre nosotros -->
+    <section id="nosotros" class="bg-gray-50 py-16 text-center">
+      <h3 class="text-3xl font-bold mb-6">Quiénes somos</h3>
+      <div class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed px-4">
+        <p>
+          Somos una empresa familiar dedicada a crear piezas únicas de joyería
+          artesanal, fusionando diseño moderno y tradición. Cada producto es
+          trabajado con pasión, cuidando cada detalle para que te sientas
+          especial al usarlo.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="bg-gray-50 py-16 text-center">
+      <h3 class="text-3xl font-bold mb-4">¿Te interesa algún producto?</h3>
+      <p class="mb-6">
+        Envíanos un mensaje por WhatsApp y te respondemos al instante.
+      </p>
+      <a
+        href="https://wa.me/522311087897"
+        target="_blank"
+        class="inline-block bg-green-500 text-white px-6 py-3 rounded hover:bg-green-600 transition"
+      >
+        📲 Escríbenos por WhatsApp
+      </a>
+    </section>
+
+    <!-- Mapa -->
+    <section id="ubicacion" class="bg-white py-16 text-center">
+      <h3 class="text-3xl font-bold mb-4">¿Dónde nos encontramos?</h3>
+      <p class="mb-6">
+        Puedes recoger tu pedido o conocernos en nuestra ubicación:
+      </p>
+      <div class="max-w-3xl mx-auto">
+        <iframe
+          class="w-full h-80 rounded-lg shadow"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.0298901359274!2d-99.1617619854364!3d19.442221986887616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92d1ec0eb11%3A0xbdf7d3516e70cf69!2sCiudad%20de%20México!5e0!3m2!1ses!2smx!4v1666379115845!5m2!1ses!2smx"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6 mt-10">
+      <p>© 2025 Joyería Elegante. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="producto.js"></script>
+  </body>
+</html>
