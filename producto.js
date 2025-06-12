@@ -118,7 +118,7 @@ card.className = "bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg 
         class="inline-block bg-pink-100 text-pink-600 px-4 py-2 rounded hover:bg-pink-200 mb-2">
         🧡 Agregar a selección
       </button><br>
-      <a href="https://wa.me/522311087897?text=${encodeURIComponent(
+      <a href="https://wa.me/522251014610?text=${encodeURIComponent(
         `Hola, estoy interesado en:\n${p.nombre}\n${p.precio}\nVer imagen: ${window.location.origin}/${p.imagen}`
       )}" 
         target="_blank"
